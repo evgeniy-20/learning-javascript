@@ -9,3 +9,10 @@ const countLetters = (input) =>  {
 }
 const result1 = countLetters(result);   
 console.log = (result1);
+const makeUserObject = (name,surname,age) => {
+    this.name = name;
+    this.surname = surname;
+    this.age = age
+}
+let makeUserObject1 = new makeUserObject('Evgeniy', 'Prokopiv', 22);
+console.log(makeUserObject1);
