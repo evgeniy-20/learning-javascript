@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <script src="input.js"></script>
-    <form name="text">
-        <input type="text" id="text4" name="text2">
-        <input type="button" value="ok" onClick ="copy()">
-    </form>
-    <script>
-        function copy() {
-            alert('Привет');
-        }
-    </script>
+    <div class="header">
+
+    </div>
+    <div class="todo-wrapper">
+        <div class="form">
+            <div class="input">
+                <input type="text" id="input">
+            </div>
+            <div class="submit">
+                <button id="submit" type="button"  onclick="alert('Привет')">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="./input.js"></script>
 </body>
 </html>
