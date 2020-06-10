@@ -1,0 +1,65 @@
+html, body, h1, h2, h3, h4, h5, h6, a, p, ul, li, input {
+  margin: 0;
+  height: 0;
+}
+
+* {
+  outline: none;
+}
+
+input {
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  border: none;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+html {
+  height: 100%;
+}
+
+.header {
+  background: #00b894;
+  height: 50px;
+  width: 100%;
+  display: block;
+}
+
+.todo-wrapper {
+  padding: 15px;
+}
+
+.todo-wrapper .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo-wrapper .form .submit {
+  padding-left: 30px;
+}
+
+.todo-wrapper .form .submit button {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */

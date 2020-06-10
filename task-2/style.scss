@@ -1,0 +1,49 @@
+html,body,h1,h2,h3,h4,h5,h6, a,p,ul,li,input {
+    margin: 0;
+    height: 0;
+}
+* {
+    outline: none;
+}
+input {
+    padding: 7px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button {
+    border: none;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+html {
+    height: 100%;
+}
+.header {
+    background: #00b894;
+    height: 50px;
+    width: 100%;
+    display: block;
+}
+.todo-wrapper {
+    padding: 15px;
+    .form {
+        display: flex;
+        .input {
+            
+        }
+        .submit {
+            padding-left: 30px;
+            button {
+                height: 100%;
+            }
+        }
+    }
+}
