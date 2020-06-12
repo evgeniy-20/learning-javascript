@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./app.js"></script>
+    <div class="header">
+
+    </div>
+    <div class="todo-wrapper">
+        <div class="form">
+            <div class="input">
+                <span>Введите ваше число</span>
+                <input type="text" class="input" id="name" oninput="greetByName()">
+            </div>
+            <div class="input">
+                <input type="text" class="input" id="number" oninput="greetByName()">
+            </div>
+            <div class="submit">
+                <button type="button" onclick="greetByName()">Поприветствовать</button>
+            </div>
+            <div id="element">
+                <ul id="elementInput"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
