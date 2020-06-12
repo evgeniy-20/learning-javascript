@@ -3,4 +3,5 @@ const greetByName = () => {
     const elementInput = document.getElementById("element")
     const text = nameInput.value + " Привет";
     element.innerHTML = text;
+    elementInput.innerHTML = text;
 }

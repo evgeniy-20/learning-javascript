@@ -15,12 +15,13 @@
         <div class="form">
             <div class="input">
                 <span>Введите ваше имя</span>
-                <input type="text" class="input" id="name">
+                <input type="text" class="input" id="name" onchange="greetByName()">
             </div>
             <div class="submit">
                 <button type="button" onclick="greetByName()">Поприветствовать</button>
             </div>
             <div id="element">
+                <ul id="elementInput"></ul>
             </div>
         </div>
     </div>
