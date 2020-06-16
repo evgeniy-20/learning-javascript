@@ -6,4 +6,7 @@ const calculateSum = () => {
     const numberValue2 = numElement2.value;
     const sum = Number(numberValue1) + Number(numberValue2); 
     resultElement.innerHTML = sum;
+    const perents = document.getElementById("result-todo");
+    const li = document.createElement('li');
+    perents.appendChild(li)
 }
