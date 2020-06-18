@@ -1,4 +1,5 @@
 const addToTheList = () => {
-    const numElement1 = document.getElementById("onclick");
+    const resultList = document.getElementById("result")
+    result.innerHTML = resultList;
 }
-addToTheList(onclick)
+addToTheList()
