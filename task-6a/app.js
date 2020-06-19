@@ -1,5 +1,6 @@
 const addToTheList = () => {
-    const resultList = document.getElementById("result")
-    const result = resultList;
+    const resultList = document.getElementById("result-todo")
+    const node = document.createElement("li"); 
+    node.innerHTML = '1';
+    resultList.appendChild(node);
 }
-addToTheList()
