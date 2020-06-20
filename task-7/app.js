@@ -1,5 +1,5 @@
 const generationRandomNumber = () => {
-    const scrietsInput = document.getElementById('scriets');
+    const secretInput = document.getElementById('secret');
     const number = Math.floor(Math.random() * 9);
-    scrietsInput.innerHTML = number;
+    secretInput.innerHTML = number;
 }
