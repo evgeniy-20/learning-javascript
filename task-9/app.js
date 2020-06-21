@@ -4,12 +4,13 @@ const getRandomNumber = () => {
 }
 const getRandomSecret = () => {
     const arrayOfNumbers = [];
-    for(let i = 0; i <= 3; i++) {
+    for(let i = 0; i < 4; i++) {
         const randomNumber = getRandomNumber();
         arrayOfNumbers.push(randomNumber);
     }
     return arrayOfNumbers;
 }
+console.log(getRandomSecret());
 const displaySecret = () => {
     const secretInput = document.getElementById('secret');
     const numbers = getRandomSecret();
