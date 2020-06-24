@@ -4,13 +4,15 @@ const getRandomNumber = () => {
 }
 const getRandomSecret = () => {
     const arrayOfNumbers = [];
-    for(let i = 0; i < 4; i++) {
+    while(arrayOfNumbers.length < 4) {
         const randomNumber = getRandomNumber();
-        arrayOfNumbers.push(randomNumber);
+        const result = arrayOfNumbers.includes(randomNumber);
+        if(result === false) {
+            arrayOfNumbers.push(randomNumber);
+        }
     }
     return arrayOfNumbers;
 }
-console.log(getRandomSecret());
 const displaySecret = () => {
     const secretInput = document.getElementById('secret');
     const numbers = getRandomSecret();
