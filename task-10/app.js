@@ -17,9 +17,4 @@ const displaySecret = () => {
     const secretInput = document.getElementById('secret');
     const numbers = getRandomSecret();
     secretInput.innerHTML = numbers;
-    const numElement1 = document.getElementById("number1");
-    const resultList = document.getElementById("result")
-    const node = document.createElement("li"); 
-    node.innerHTML = numbers;
-    resultList.appendChild(node);
 }
