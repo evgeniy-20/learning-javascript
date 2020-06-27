@@ -23,6 +23,7 @@ const сheckSecret = () => {
     const resultList = document.getElementById("result")
     const numberValue1 = numElement1.value;
     const node = document.createElement("li"); 
-    node.innerHTML = numberValue1;
+    const sum = ' Привет';
+    node.innerHTML = numberValue1 + sum;
     resultList.appendChild(node);
 }
