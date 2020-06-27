@@ -23,7 +23,15 @@ const сheckSecret = () => {
     const resultList = document.getElementById("result")
     const numberValue1 = numElement1.value;
     const node = document.createElement("li"); 
-    const sum = ' Привет';
-    node.innerHTML = numberValue1 + sum;
-    resultList.appendChild(node);
+    node.innerHTML = numberValue1 + calckSum();
+    const sum1 = Number(node)
+    resultList.appendChild(sum1);
 }
+const calckSum = (number) => {
+    let sum = 0;
+    for (let i = 0; i < number.length; i++) {
+        sum = sum + Number(number[i]);
+    }
+    return sum;
+}
+
