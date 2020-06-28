@@ -23,16 +23,14 @@ const сheckSecret = () => {
     const resultList = document.getElementById("result")
     const numberValue1 = numElement1.value;
     const node = document.createElement("li"); 
-    const sumOfNumbers = calckSum(numberValue1);
-    node.innerHTML = numberValue1 + sumOfNumbers;
+    const sumOfNumbers = calcSum(numberValue1);
+    node.innerHTML = numberValue1 + ' ' + sumOfNumbers;
     resultList.appendChild(node);
 }
-const calckSum = (numberValue1) => {
+const calcSum = (numberValue1) => {
     let sum = 0;
     for (let i = 0; i < numberValue1.length; i++) {
-        if(numberValue1[i] === " ") {
-            sum = sum + Number(numberValue1[i]);
-        }
+        sum = sum + Number(numberValue1[i]);
     }
     return sum;
 }
