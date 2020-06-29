@@ -21,20 +21,20 @@ const displaySecret = () => {
 const сheckSecret = () => {
     const numElement1 = document.getElementById("number1");
     const resultList = document.getElementById("result")
-    const numberValue1 = numElement1.value;
-    const node = document.createElement("li"); 
-    const sumOfNumbers = calcSum(numberValue1);
-    node.innerHTML = numberValue1 + ' ' + sumOfNumbers;
-    resultList.appendChild(node);
+    const numberValue1 = numElement1.value 
+    if(numberValue1.length != 4) {
+        alert("Пожалуйста введите 4 цифры")
+    } else {
+        const node = document.createElement("li"); 
+        const sumOfNumbers = calcSum(numberValue1);
+        node.innerHTML = numberValue1 + ' ' + sumOfNumbers;
+        resultList.appendChild(node);
+    }
 }
 const calcSum = (numberValue1) => {
     let sum = 0;
     for (let i = 0; i < numberValue1.length; i++) {
-        if(numberValue1.length != 4) {
-            alert("Пожалуйста введите 4 цифры")
-        } else {
-            sum = sum + Number(numberValue1[i]);
-        } 
+        sum = sum + Number(numberValue1[i]);
     }
     return sum;
 }
