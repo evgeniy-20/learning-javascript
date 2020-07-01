@@ -29,8 +29,8 @@ const сheckSecret = () => {
         const sumOfNumbers = calcSum(numberValue1);
         node.innerHTML = numberValue1 + ' ' + sumOfNumbers;
         resultList.appendChild(node);
-        const nambers = innerHTML.secretInput
-        if(numberValue1 === numbers) {
+        const numbers1 = innerHTML.secretInput
+        if(numberValue1 === numbers1) {
 
         }
     }
