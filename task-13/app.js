@@ -27,11 +27,13 @@ const сheckSecret = () => {
     } else {
         const node = document.createElement("li"); 
         const sumOfNumbers = calcSum(numberValue1);
+        const numbers1 = secretInput.innerHTML;
         node.innerHTML = numberValue1 + ' ' + sumOfNumbers;
         resultList.appendChild(node);
-        const numbers1 = innerHTML.secretInput
-        if(numberValue1 === numbers1) {
-
+        if(numElement1 === numbers1) {
+            result = numberValue1;
+        } else {
+            result != numbers1;
         }
     }
 }
