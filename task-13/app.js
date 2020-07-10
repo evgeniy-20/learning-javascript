@@ -25,16 +25,17 @@ const сheckSecret = () => {
     if(numberValue1.length != 4) {
         alert("Пожалуйста введите 4 цифры")
     } else {
+        if(numberValue1 === numbers1) {
+            alert("Числа совпадают");
+        } else {
+            alert("Числа не совпадают");
+        }
         const node = document.createElement("li"); 
         const sumOfNumbers = calcSum(numberValue1);
-        const numbers1 = secretInput.innerHTML;
         node.innerHTML = numberValue1 + ' ' + sumOfNumbers;
         resultList.appendChild(node);
-        if(numElement1 === numbers1) {
-            result = numberValue1;
-        } else {
-            result != numbers1;
-        }
+        const numbers1 = secretInput.innerHTML;
+        alert(numbers1);
     }
 }
 const calcSum = (numberValue1) => {
