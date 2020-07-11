@@ -17,8 +17,6 @@ const displaySecret = () => {
     const secretInput = document.getElementById('secret');
     const numbers = getRandomSecret();
     secretInput.innerHTML = numbers;
-    const numbers1 = secretInput.innerHTML;
-    const a = numbers1;
 }
 const сheckSecret = () => {
     const numElement1 = document.getElementById("number1");
@@ -31,10 +29,11 @@ const сheckSecret = () => {
         const sumOfNumbers = calcSum(numberValue1);
         node.innerHTML = numberValue1 + ' ' + sumOfNumbers;
         resultList.appendChild(node);
-        if(numberValue1 === displaySecret()) {
-            numberValue1 = numberValue1 + displaySecret();
+        const numbers1 = secretInput.innerHTML;
+        if(numberValue1 === numbers1) {
+            alert("Числа совпадают");
         } else {
-            numberValue1 != numberValue1 + displaySecret();
+            alert("Числа не совпадают");
         }
     }
 }
