@@ -7,7 +7,12 @@
 </head>
 <body>
     <script src="./app.js">
-
+           function buttonClick() {
+               var input = document.getElementById('input');
+               alert(input.value);
+            }
     </script>
+    <button onclick="buttonClick()">Нажми на меня</button>
+    <input type="text" id="input" value="???">
 </body>
 </html>
