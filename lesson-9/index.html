@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <script src="./iapp.js">
+    </script>
+    <div class="form">
+        <button onclick="buttonClick()">Нажми на меня</button>
+        <img src="./images/1.jpg" alt="" id="img">
+    </div>
+   <div class="from">
+       <button onclick="inputClick()">Нажми на меня</button>
+       <input type="text" value="Ку-ку" id="input">
+   </div>
+   <div class="from">
+        <input type="text" value="Ку-ку" id="test">
+        <button onclick="hide()">Нажми на меня!</button>
+        <button onclick="show()">Нажми потом на меня!</button>
+   </div>
+   <div class="from">
+        <button onclick="button()">Нажми на меня</button>
+        <input type="text" value="Ку-ку" id="input2">
+   </div>
+   <div class="from">
+        <input type="submit" onclick="block(this)" value="Нажми на меня!" id="block">
+        <input type="submit" onclick="unblock('button')" value="Нажми чтобы отблокировать элемент" style="display: none;" id="unblock">
+   </div>
+   <div class="from">
+       <p>Кнопка считает кол-во нажатий по ней.</p>
+       <input type="submit" value="0" id="input3" onclick="go(this)">
+   </div>
+   <div class="from">
+        <input type="text" value="Ку-ку" id="test1">
+        <button onclick="getGo()">Нажми на меня!</button>
+   </div>
+    <div class="from">
+        <input type="text" value="Ку-ку" id="test2">
+        <button onclick="getBo()">Нажми на меня!</button>
+    </div>
+    <div class="from">
+        <input type="text" value="Пока!" id="input1">
+        <input type="text" value="Привет!" id="input5">
+        <button onclick="getNo()">Нажми на меня!</button>
+    </div>
+    <div class="from">
+        <input type="text" value="" placeholder="Введите число!" id="test3">
+        <input id = "result" value = "Здесь появится результат." disabled>
+        <button onclick="go()">Нажми на меня!</button>
+    </div>
+</body>
+</html>

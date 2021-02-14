@@ -393,3 +393,285 @@
 //     fact = fact * i; 
 // } 
 // console.log(fact);
+// функции работы со строкамы 
+// const str ='js';
+// console.log(str.toUpperCase());
+// const str1 = 'JS';
+// console.log(str1.toLowerCase());
+// const str = 'я учу javascript!';
+// console.log(str.length);
+//Дана строка 'я учу javascript!'. Вырежите из нее слово 'учу' и слово 'javascript' тремя разными способами (через substr, substring, slice).
+// const str = 'я учу javascript!'
+// console.log(str.slice(2,5));
+// console.log(str.slice(6,16));
+// console.log(str.substring(2,5));
+// console.log(str.substring(2,16));
+// console.log(str.substr(2,4));
+// console.log(str.substr(2,16));
+//Дана строка 'я учу javascript!'. Найдите позицию подстроки 'учу'.
+// const str = 'я учу javascript!';
+// const a = str.indexOf('учу');
+// console.log(a);
+// Дана переменная str, в которой хранится какой-либо текст. Реализуйте обрезание длинного текста по следующему принципу: если количество символов этого текста больше заданного в переменной n, то в переменную result запишем первые n символов строки str и добавим в конец троеточие '...'. В противном случае в переменную result запишем содержимое переменной str.
+// const str = 'egjlkjglkfdjglfjgirtg9ujbhkvnbkjkbjgjlfgjfklkfn dgkdjgkldfjgkjlfdkjgkfdgljfdgkjfdlkgjldf kflglfkgjlfkjglkfjglfjg';
+// const n = 15;
+// const result = '';
+// if() {
+
+// } else {
+
+// }
+// // Дана строка 'Я-учу-javascript!'. Замените все дефисы на '!' с помощью глобального поиска и замены.
+// const str = 'Я-учу-javascript!';
+// const a  = /-/gi;
+// const str1 = str.replace(a, '!');
+// console.log(str1);
+// Дана строка 'я учу javascript!'. С помощью метода split запишите каждое слово этой строки в отдельный элемент массива.
+// const str = 'я учу javascript!';
+// const a = str.split(' ');
+// console.log(a);
+// //Дана строка 'я учу javascript!'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+// const str = 'я учу javascript!';
+// const a = str.split([]);
+// console.log(a);
+//В переменной date лежит дата в формате '2025-12-31'. Преобразуйте эту дату в формат '31.12.2025'.
+// const date = '2020-08-25';
+// const arr = date.split('-');
+// const newStr = arr[2] + '.' + arr[1] + '.' + arr[0];
+// console.log(newStr);
+// Дан массив ['я', 'учу', 'javascript', '!']. С помощью метода join преобразуйте массив в строку 'я+учу+javascript+!'.
+// const arr = ['я', 'учу', 'javascript', '!'];
+// const str = arr.join('+');
+// console.log(str);
+// Преобразуйте первую букву строки в верхний регистр.
+// const str = 'я учу javascript!';
+// const newStr = `${str[0].toUpperCase()} учу javascript!`
+// console.log(newStr);
+// Преобразуйте первую букву каждого слова строки в верхний регистр.
+// const str = 'я учу javascript!';
+// const newStr = `${str[0].toUpperCase()} ${str[2].toUpperCase()}чу ${str[6].toUpperCase()}avascript!`
+// console.log(newStr);
+// //Преобразуйте строку 'var_test_text' в 'varTestText'. Скрипт, конечно же, должен работать с любыми аналогичными строками.
+// const str = 'var_test_text';
+// const newStr = `var${str[4].toUpperCase()}est${str[9].toUpperCase()}ext`
+// console.log(newStr);
+// массивы 
+// Даны два массива: [1, 2, 3] и [4, 5, 6]. Объедините их вместе.
+// const a = [1, 2, 3]; 
+// const b = [4, 5, 6];
+// const c = a.concat(b);
+// console.log(c);
+//Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1].
+// const a = [1,2,3];
+// const b = a.reverse();
+// console.log(b);
+// Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6.
+// const a = [1, 2, 3];
+// a.push(4,5,6);
+// console.log(a);
+//  Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
+// const a = [1,2,3];
+// a.unshift(4,5,6);
+// console.log(a);
+//Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент.
+// const arr = ['js', 'css', 'jq'];
+// const element = arr.shift();
+// console.log(element);
+//Дан массив ['js', 'css', 'jq']. Выведите на экран последний элемент.
+// const arr = ['js', 'css', 'jq'];
+// const element = arr.pop();
+// console.log(element);
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
+// const arr = [1,2,3,4,5];
+// const element = arr.slice(0,3);
+// console.log(element);
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
+// const arr = [1,2,3,4,5];
+// const element = arr.slice(3,5);
+// console.log(element);
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].
+// const arr = [1,2,3,4,5];
+// arr.splice(1,2);
+// console.log(arr);
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
+// const arr = [1,2,3,4,5];
+// const newArr = arr.splice(2,-1);
+// console.log(newArr);
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 2, 3, 'a', 'b', 'c', 4, 5].
+// const arr = [1,2,3,4,5];
+// arr.splice(3, 0, 'a', 'b', 'c')
+// console.log(arr);
+// //Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
+// const arr = [1,2,3,4,5];
+// arr.splice(1,0, 'a', 'b')
+// console.log(arr);
+// Дан массив [3, 4, 1, 2, 7]. Отсортируйте его.
+// const arr = [3, 4, 1, 2, 7];
+// arr.sort();
+// console.log(arr);
+// Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
+// const obj = {
+//     js:'test', 
+//     jq: 'hello', 
+//     css: 'world'
+// }
+// const newObj = Object.keys(obj);
+// console.log(newObj);
+// Дана строка. Сделайте заглавным первый символ этой строки не используя цикл. Найдите два решения.
+// const str = 'я учу javascript!';
+// const newStr = `${str[0].toUpperCase()} учу javascript!`
+// console.log(newStr)
+// Дана строка, например, '123456'. Переверните эту строку (сделайте из нее '654321') не используя цикл
+// const str = '123456';
+// const result = str.split('').reverse().join('');
+// console.log(result);
+// Проверьте, что строка начинается на http://
+// const str = 'http://phphtml';
+// if (str.substr(0, 7) == 'http://') {
+// 	console.log('Да');
+// } else {
+// 	console.log('Нет');
+// }
+//  Проверьте, что строка заканчивается на .html
+// var str = 'index.html';
+// if (str.substr(-5) == '.html') {
+// 	console.log('Да');
+// } else {
+// 	console.log('Нет');
+// }
+// функция
+// Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
+// const square = (num) => {
+//     return num * num;
+// }
+// console.log(square(18));
+//Сделайте функцию, которая возвращает сумму двух чисел.
+// const sum = (num) => {
+//     return num + num;
+// }
+// console.log(sum(18));
+//Сделайте функцию, которая отнимает от первого числа второе и делит на третье.
+// const operation = (num1,num2,num3) => {
+//     return (num1 - num2) / num3;
+// }
+// console.log(operation(999, 324, 5));
+//Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
+// const square = (num) => {
+//     const arr = array('Пн', 'Вт', 'Ср', 'Чет', 'Пят', 'Суб', 'Воск');
+//     return arr;
+// }
+// console.log(square(18));
+//Дан массив с числами. Проверьте, что в этом массиве есть число 5. Если есть - выведите 'да', а если нет - выведите 'нет'.
+// const number = [1,2,3,4,5,6,7,8,9,10];
+// for(let i = 0; i <= number.length; i++) {
+//     if (number[i] === 5) {
+//         console.log('Yes');
+//     } else {
+//         console.log('No');
+//     }
+// }
+//Дано число, например 31. Проверьте, что это число не делится ни на одно другое число кроме себя самого и единицы. То есть в нашем случае нужно проверить, что число 31 не делится на все числа от 2 до 30. Если число не делится - выведите 'false', а если делится - выведите 'true'.
+// const num = 31;
+//     let flag = true;
+
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             flag = false;
+//             break;
+//         }
+//     };
+
+//     if (flag) {
+//         console.log('Yes');
+//     } else {
+//         console.log('No');
+//     }
+//Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.
+//Приемы работы с логическими значениями
+//Сделайте функцию, которая параметрами принимает 2 числа. Если эти числа равны - пусть функция вернет true, а если не равны - false.
+// const numbers = () => {
+//     if(4 === 10) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(numbers())
+//Сделайте функцию, которая параметрами принимает 2 числа. Если их сумма больше 10 - пусть функция вернет true, а если нет - false.
+// const numbers = () => {
+//     if(3 + 12 > 10) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(numbers())
+//Сделайте функцию, которая параметром принимает число и проверяет - отрицательное оно или нет. Если отрицательное - пусть функция вернет true, а если нет - false.
+//Задачи на приемы работы с циклами на JavaScript
+// С помощью цикла for сформируйте строку '123456789' и запишите ее в переменную str.
+// let str = '';
+// for(let i = 1; i <= 9; i++) {
+//     str = str + i
+// }
+// console.log(str);
+// С помощью цикла for сформируйте строку '987654321' и запишите ее в переменную str.
+// let str = '';
+// for(let i = 9; i >= 1; i++) {
+//     str = str + i;
+// }
+// console.log(str);
+// функции масивов 
+//Заполните массив следующим образом: в первый элемент запишите 'x', во второй 'xx', в третий 'xxx' и так далее.
+// const arr = [];
+// for(let i = 0; i <= 10; i++) {
+//     for(let j = 0; j <= 3; j++) {
+//         arr.push('x')
+//     }
+// }
+// console.log(arr);
+//Сделайте функцию isNumberInRange, которая параметром принимает число и проверяет, что оно больше нуля и меньше 10. Если это так - пусть функция возвращает true, если не так - false.
+// const isNumberInRange = (num) => {
+//     if(num > 0 && num < 10) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(isNumberInRange(15));
+//Дан массив с числами. Запишите в новый массив только те числа, которые больше нуля и меньше 10-ти. Для этого используйте вспомогательную функцию isNumberInRange из предыдущей задачи.
+// const arr = [5,7,9,15,25,65,75];
+// const isNumberInRange = (num) => {
+//     if(num > 0 && num < 10) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// const newArr = [];
+// for(let i = 0; i <= arr.length; i++) {
+//     if(isNumberInRange(arr[i])) {
+//         newArr.push(arr[i])
+//     }
+// }
+// console.log(newArr);
+//Сделайте функцию getDigitsSum (digit - это цифра), которая параметром принимает целое число и возвращает сумму его цифр.
+// const getDigitsSum = (digit1, digit2) => {
+//     return digit1 + digit2;
+// }
+// console.log(getDigitsSum(5,7))
+//Найдите все года от 1 до 2020, сумма цифр которых равна 13. Для этого используйте вспомогательную функцию getDigitsSum из предыдущей задачи.
+const getDigitsSum = (digit1, digit2) => {
+    return digit1 + digit2;
+}
+console.log(getDigitsSum(5,7))
+const arrYear = [];
+function yearSum() {
+  for (let i = 1; i <= 2020; i++) { 
+
+    if (getDigitsSum(i) === 13) { 
+      arrYear.push(i);
+    }
+  }
+  return arrYear;
+}
+console.log(yearSum());
