@@ -44,13 +44,13 @@ const button3 = () => {
         elems2[i].innerHTML = i+1;
     }
 }
-var date = new Date();
-alert(date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate());
-var months = [
-	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
-	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
-];
+// var date = new Date();
+// alert(date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate());
+// var months = [
+// 	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+// 	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+// ];
 
-var date = new Date();
-var month = date.getMonth();
-alert(months[month]);
+// var date = new Date();
+// var month = date.getMonth();
+// alert(months[month]);
